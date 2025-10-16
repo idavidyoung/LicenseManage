@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="9.0.537" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftwareLicenseManage.Core\SoftwareLicenseManage.Core.csproj" />
+    <ProjectReference Include="..\Modules\SoftwareLicenseManage.Modules.ModuleName\SoftwareLicenseManage.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\SoftwareLicenseManage.Services.Interfaces\SoftwareLicenseManage.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\SoftwareLicenseManage.Services\SoftwareLicenseManage.Services.csproj" />
+  </ItemGroup>
+</Project>
